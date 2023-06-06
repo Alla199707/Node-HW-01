@@ -36,11 +36,11 @@ const invokeAction = async ({
 
     case "add":
       const newContact =
-        await operations.addContact({
+        await operations.addContact(
           name,
           email,
-          phone,
-        });
+          phone
+        );
       console.table(newContact);
       break;
 
